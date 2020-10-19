@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Donate;
+		--web-view-id: Donate;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Donate;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Donate {
+		position: absolute;
+		width: 1920px;
+		height: 1107px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Donate;
+		--web-view-id: Donate;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Path_204 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_204 {
+		filter: drop-shadow(10px 13px 14px rgba(0, 0, 0, 0.345));
+		overflow: visible;
+		position: absolute;
+		width: 923.313px;
+		height: 216.854px;
+		left: 984px;
+		top: 868.027px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#There_isnt_a_specific_time___f {
+		left: 126px;
+		top: 554px;
+		position: absolute;
+		overflow: visible;
+		width: 791px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 60px;
+		color: rgba(0,0,0,1);
+	}
+	#visAngel {
+		left: 152px;
+		top: 52px;
+		position: absolute;
+		overflow: visible;
+		width: 139px;
+		white-space: nowrap;
+		line-height: 60px;
+		margin-top: -15px;
+		text-align: left;
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(0,0,0,1);
+	}
+	#C {
+		left: 1199px;
+		top: 654px;
+		position: absolute;
+		overflow: hidden;
+		width: 3px;
+		height: 3px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Foundations {
+		left: 316px;
+		top: 64px;
+		position: absolute;
+		overflow: visible;
+		width: 282px;
+		height: 25px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(14,158,248,1);
+	}
+	#Screenshot_2020-10-14_at_55030 {
+		position: absolute;
+		width: 77px;
+		height: 72px;
+		left: 49px;
+		top: 34px;
+		overflow: visible;
+	}
+	#Profile {
+		left: 510px;
+		top: 64px;
+		position: absolute;
+		overflow: visible;
+		width: 282px;
+		height: 21px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Profile.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(14,158,248,1);
+	}
+	#About {
+		left: 679px;
+		top: 64px;
+		position: absolute;
+		overflow: visible;
+		width: 282px;
+		height: 21px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(14,158,248,1);
+	}
+	#Donate_x {
+		left: 830px;
+		top: 64px;
+		position: absolute;
+		overflow: visible;
+		width: 282px;
+		height: 21px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(14,158,248,1);
+	}
+	#Screenshot_2020-10-15_at_10627 {
+		position: absolute;
+		width: 269px;
+		height: 258px;
+		left: 328px;
+		top: 238px;
+		overflow: visible;
+	}
+	#Current_Foundation_Club_Rainbo {
+		left: 984px;
+		top: 154px;
+		position: absolute;
+		overflow: visible;
+		width: 583px;
+		white-space: nowrap;
+		line-height: 40px;
+		margin-top: -7.5px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(0,0,0,1);
+	}
+	#Path_199 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_199 {
+		filter: drop-shadow(10px 13px 14px rgba(0, 0, 0, 0.345));
+		overflow: visible;
+		position: absolute;
+		width: 923.313px;
+		height: 216.854px;
+		left: 984px;
+		top: 219.027px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_900 {
+		position: absolute;
+		width: 201px;
+		height: 46px;
+		left: 1628px;
+		top: 283px;
+		overflow: visible;
+	}
+	#Rectangle_408 {
+		fill: rgba(58,139,83,1);
+	}
+	.Rectangle_408 {
+		position: absolute;
+		overflow: visible;
+		width: 201px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+	}
+	#Donate_ {
+		left: 58px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#S10_ {
+		left: 1013px;
+		top: 264px;
+		position: absolute;
+		overflow: visible;
+		width: 152px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 60px;
+		color: rgba(0,0,0,1);
+	}
+	#ID10_will_help_1_beneficiary_w {
+		left: 1211px;
+		top: 264px;
+		position: absolute;
+		overflow: hidden;
+		width: 340px;
+		height: 111px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Path_200 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_200 {
+		filter: drop-shadow(10px 13px 14px rgba(0, 0, 0, 0.345));
+		overflow: visible;
+		position: absolute;
+		width: 923.313px;
+		height: 216.854px;
+		left: 984px;
+		top: 427.027px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#S50_ {
+		left: 1013px;
+		top: 470px;
+		position: absolute;
+		overflow: visible;
+		width: 168px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 60px;
+		color: rgba(0,0,0,1);
+	}
+	#ID50_will_pay_for_1_session_of {
+		left: 1211px;
+		top: 470px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 98px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Group_901 {
+		position: absolute;
+		width: 201px;
+		height: 46px;
+		left: 1628px;
+		top: 496px;
+		overflow: visible;
+	}
+	#Rectangle_408_ba {
+		fill: rgba(58,139,83,1);
+	}
+	.Rectangle_408_ba {
+		position: absolute;
+		overflow: visible;
+		width: 201px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+	}
+	#Donate_bb {
+		left: 58px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Rectangle_409 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_409 {
+		position: absolute;
+		overflow: visible;
+		width: 355px;
+		height: 64px;
+		left: 1141px;
+		top: 935px;
+	}
+	#S {
+		left: 1013px;
+		top: 929px;
+		position: absolute;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 60px;
+		color: rgba(0,0,0,1);
+	}
+	#Enter_donation_amount_______ {
+		left: 1013px;
+		top: 887px;
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 27px;
+		color: rgba(0,0,0,1);
+	}
+	#Path_203 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_203 {
+		filter: drop-shadow(10px 13px 14px rgba(0, 0, 0, 0.345));
+		overflow: visible;
+		position: absolute;
+		width: 923.313px;
+		height: 216.854px;
+		left: 984px;
+		top: 640.027px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_18 {
+		position: absolute;
+		width: 201px;
+		height: 46px;
+		left: 1628px;
+		top: 929px;
+		overflow: visible;
+	}
+	#Rectangle_408_bh {
+		fill: rgba(58,139,83,1);
+	}
+	.Rectangle_408_bh {
+		position: absolute;
+		overflow: visible;
+		width: 201px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+	}
+	#Donate_bi {
+		left: 64px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#S100_ {
+		left: 1013px;
+		top: 676px;
+		position: absolute;
+		overflow: visible;
+		width: 190px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 60px;
+		color: rgba(0,0,0,1);
+	}
+	#ID100_will_provide_1_Speech_Th {
+		left: 1211px;
+		top: 678px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 122px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Group_902 {
+		position: absolute;
+		width: 201px;
+		height: 46px;
+		left: 1628px;
+		top: 704px;
+		overflow: visible;
+	}
+	#Rectangle_408_bm {
+		fill: rgba(58,139,83,1);
+	}
+	.Rectangle_408_bm {
+		position: absolute;
+		overflow: visible;
+		width: 201px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+	}
+	#Donate_bn {
+		left: 58px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Change {
+		left: 1785px;
+		top: 162px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Foundation.html;
+		cursor: pointer;
+		line-height: 60px;
+		margin-top: -23px;
+		text-align: right;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(72,165,104,1);
+	}
+    #Link {
+		color: rgba(14,158,248,1);
+		text-decoration: none;
+	}
+
+	#Link:hover{
+		color: rgba(14,158,248,1);
+		font-weight: bold;
+	}
+
+
+    #LinkChange {
+		color: rgba(72,165,104,1);
+		text-decoration: none;
+	}
+
+	#LinkChange :hover{
+		color: rgba(72,165,104,1);
+		font-weight: bold;
+	}
+
+</style>
+</head>
+<body>
+<div id="Donate">
+	<svg class="Path_204" viewBox="0 0 881.313 174.854">
+		<path id="Path_204" d="M 10.33798217773438 0 L 870.9749755859375 0 C 876.6845092773438 0 881.31298828125 0.747348964214325 881.31298828125 1.66925060749054 L 881.31298828125 173.1847381591797 C 881.31298828125 174.106689453125 876.6845092773438 174.85400390625 870.9749755859375 174.85400390625 L 10.33798217773438 174.85400390625 C 4.628471851348877 174.85400390625 0 174.106689453125 0 173.1847381591797 L 0 1.66925060749054 C 0 0.747348964214325 4.628471851348877 0 10.33798217773438 0 Z">
+		</path>
+	</svg>
+	<div id="There_isnt_a_specific_time___f">
+		<span>There isn’t a specific time <br/><br/>for reaching out.<br/></span><br><span style="font-style:normal;font-weight:normal;font-size:40px;">Donate anytime, Help every moment. </span><br><span><br/><br/><br/><br/></span><br>
+	</div>
+	<div id="visAngel">
+		<span>visAngel</span>
+	</div>
+	<div id="Foundations">
+        <span><a id="Link" href="./foundation.html">Foundations</a></span>
+	</div>
+	<img id="Screenshot_2020-10-14_at_55030" src="pictures/logo.png">
+	<div onclick="application.goToTargetView(event)" id="Profile">
+		<span>Profile</span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="About">
+        <span><a id="Link" href="./index.html">About</a></span>
+	</div>
+	<div id="Donate_x">
+		<span>Donate</span>
+	</div>
+	<img id="Screenshot_2020-10-15_at_10627" src="pictures/handHeart.png">
+	<div id="Current_Foundation_Club_Rainbo">
+		<span>Current Foundation: </span><span style="font-style:normal;font-weight:normal;">Club Rainbow Foundation</span>
+	</div>
+	<svg class="Path_199" viewBox="0 0 881.313 174.854">
+		<path id="Path_199" d="M 10.33798217773438 0 L 870.9749755859375 0 C 876.6845092773438 0 881.31298828125 0.747348964214325 881.31298828125 1.66925060749054 L 881.31298828125 173.1847381591797 C 881.31298828125 174.106689453125 876.6845092773438 174.85400390625 870.9749755859375 174.85400390625 L 10.33798217773438 174.85400390625 C 4.628471851348877 174.85400390625 0 174.106689453125 0 173.1847381591797 L 0 1.66925060749054 C 0 0.747348964214325 4.628471851348877 0 10.33798217773438 0 Z">
+		</path>
+	</svg>
+	<div id="Group_900">
+		<svg class="Rectangle_408">
+			<rect id="Rectangle_408" rx="4" ry="4" x="0" y="0" width="201" height="46">
+			</rect>
+		</svg>
+		<div id="Donate_">
+			<span>Donate</span>
+		</div>
+	</div>
+	<div id="S10_">
+		<span>S$10 </span>
+	</div>
+	<div id="ID10_will_help_1_beneficiary_w">
+		<span>$10 will help 1 beneficiary with mobility issue pay for a transport trip to the hospital for medical checkup.</span>
+	</div>
+	<svg class="Path_200" viewBox="0 0 881.313 174.854">
+		<path id="Path_200" d="M 10.33798217773438 0 L 870.9749755859375 0 C 876.6845092773438 0 881.31298828125 0.747348964214325 881.31298828125 1.66925060749054 L 881.31298828125 173.1847381591797 C 881.31298828125 174.106689453125 876.6845092773438 174.85400390625 870.9749755859375 174.85400390625 L 10.33798217773438 174.85400390625 C 4.628471851348877 174.85400390625 0 174.106689453125 0 173.1847381591797 L 0 1.66925060749054 C 0 0.747348964214325 4.628471851348877 0 10.33798217773438 0 Z">
+		</path>
+	</svg>
+	<div id="S50_">
+		<span>S$50 </span>
+	</div>
+	<div id="ID50_will_pay_for_1_session_of">
+		<span>$50 will pay for 1 session of physiotherapy for each beneficiary</span>
+	</div>
+	<div id="Group_901">
+		<svg class="Rectangle_408_ba">
+			<rect id="Rectangle_408_ba" rx="4" ry="4" x="0" y="0" width="201" height="46">
+			</rect>
+		</svg>
+		<div id="Donate_bb">
+			<span>Donate</span>
+		</div>
+	</div>
+	<svg class="Rectangle_409">
+		<rect id="Rectangle_409" rx="32" ry="32" x="0" y="0" width="355" height="64">
+		</rect>
+	</svg>
+	<div id="S">
+		<span>S$</span>
+	</div>
+	<div id="Enter_donation_amount_______">
+		<span>Enter donation amount</span><span style="font-style:normal;font-weight:normal;font-size:18px;"> </span><br><span><br/><br/><br/><br/></span><br>
+	</div>
+	<svg class="Path_203" viewBox="0 0 881.313 174.854">
+		<path id="Path_203" d="M 10.33798217773438 0 L 870.9749755859375 0 C 876.6845092773438 0 881.31298828125 0.747348964214325 881.31298828125 1.66925060749054 L 881.31298828125 173.1847381591797 C 881.31298828125 174.106689453125 876.6845092773438 174.85400390625 870.9749755859375 174.85400390625 L 10.33798217773438 174.85400390625 C 4.628471851348877 174.85400390625 0 174.106689453125 0 173.1847381591797 L 0 1.66925060749054 C 0 0.747348964214325 4.628471851348877 0 10.33798217773438 0 Z">
+		</path>
+	</svg>
+	<div id="Group_18">
+		<svg class="Rectangle_408_bh">
+			<rect id="Rectangle_408_bh" rx="4" ry="4" x="0" y="0" width="201" height="46">
+			</rect>
+		</svg>
+		<div id="Donate_bi">
+			<span>Donate</span>
+		</div>
+	</div>
+	<div id="S100_">
+		<span>S$100 </span>
+	</div>
+	<div id="ID100_will_provide_1_Speech_Th">
+		<span>$100 will provide 1 Speech Therapy Session for 1 beneficiary.</span>
+	</div>
+	<div id="Group_902">
+		<svg class="Rectangle_408_bm">
+			<rect id="Rectangle_408_bm" rx="4" ry="4" x="0" y="0" width="201" height="46">
+			</rect>
+		</svg>
+		<div id="Donate_bn">
+			<span>Donate</span>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Change">
+        <span><a id="LinkChange" href="./foundation.html">Change</a></span>
+	</div>
+</div>
+</body>
+</html>
