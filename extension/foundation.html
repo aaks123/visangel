@@ -42,6 +42,17 @@
 		}
 	
 	}
+
+	#Link {
+		color: rgba(14,158,248,1);
+		text-decoration: none;
+	}
+
+	#Link:hover{
+		color: rgba(14,158,248,1);
+		font-weight: bold;
+	}
+
 	#visAngel {
 		left: 152px;
 		top: 52px;
@@ -3650,7 +3661,7 @@ window.application = new Application();
 		<span>Ensure that your help reaches your desired foundation safely and securely.</span><br>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="About">
-		<span>About</span>
+		<span><a id="Link" href="./index.html">About</a></span>
 	</div>
 	<img id="Screenshot_2020-10-15_at_41523" src="pictures/singapore.png">
 	<img id="Screenshot_2020-10-15_at_41523_bw" src="pictures/singapore.png">
@@ -3664,7 +3675,7 @@ window.application = new Application();
 	<img id="Screenshot_2020-10-16_at_12192" src="pictures/insta.png">
 	<img id="Screenshot_2020-10-16_at_12192_b" src="pictures/insta.png">
 	<div onclick="application.goToTargetView(event)" id="Donate">
-		<span>Donate</span>
+		<span><a id="Link" href="./donate.html">Donate</a></span>
 	</div>
 </div>
 </body>
