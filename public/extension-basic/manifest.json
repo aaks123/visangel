@@ -6,8 +6,8 @@
     "version": "1.0",
   
     "browser_action": {
-     "default_icon": "pictures/logo.png",
-     "default_popup": "popup.html"
+     "default_icon": "christmas-angel.png",
+     "default_popup": "https://fathomless-plains-99481.herokuapp.com/"
     },
     "permissions": [
      "activeTab"
