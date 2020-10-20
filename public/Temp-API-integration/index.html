@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>VisAngel</title>
+    <!-- <script src="./visaCheckoutScript.js" type="module"></script> -->
+    <script type="text/javascript">
+    function onVisaCheckoutReady() {
+        V.init( {
+        apikey: "WKKMXMDYMZDINICCUVM521Wa0JaoIgMgFnSndqO1IFJCgcNl8",
+        encryptionKey: "DK54CL72S4WV6TVC0X1013i4YBthWTqe5keMTYFjhIrF3_oJg",
+        paymentRequest: {
+            currencyCode: "USD",
+            subtotal: "10.00"
+        }
+        });
+        V.on("payment.success", function(payment) {
+        document.write("payment.success: \n" + JSON.stringify(payment));
+        });
+        V.on("payment.cancel", function(payment) {
+        document.write("payment.cancel: \n" + JSON.stringify(payment));
+        });
+        V.on("payment.error", function(payment, error) {
+        document.write("payment.error: \n" +
+        JSON.stringify(payment) + "\n" +
+        JSON.stringify(error));
+        });
+        }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to VisAngel</h1>
+    <img alt="Visa Checkout" class="v-button" role="button"
+    src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
+    <script type="text/javascript"
+    src="https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js">
+    </script>
+  </body>
+</html>

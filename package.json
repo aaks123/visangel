@@ -1,0 +1,24 @@
+{
+  "name": "visangel",
+  "version": "1.0.0",
+  "description": "step up bootcamp project: extension and page for donation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harisrc/visangel.git"
+  },
+  "author": "Group-2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harisrc/visangel/issues"
+  },
+  "homepage": "https://github.com/harisrc/visangel#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.5"
+  }
+}
