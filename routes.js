@@ -5,4 +5,8 @@ router.get('/',function(req,res){
     res.render('index')
 })
 
+router.get('/Profile',function(req,res){
+    res.render('profile')
+})
+
 module.exports = router;
