@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: About;
+		--web-view-id: About;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: About;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#About {
+		position: absolute;
+		width: 1920px;
+		height: 1107px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: About;
+		--web-view-id: About;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#visAngel {
+		left: 152px;
+		top: 52px;
+		position: absolute;
+		overflow: visible;
+		width: 139px;
+		white-space: nowrap;
+		line-height: 60px;
+		margin-top: -15px;
+		text-align: left;
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(0,0,0,1);
+	}
+	#Foundations {
+		left: 316px;
+		top: 64px;
+		position: absolute;
+		overflow: visible;
+		width: 282px;
+		height: 25px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: foundation.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(14,158,248,1);
+	}
+	#Screenshot_2020-10-14_at_55030 {
+		position: absolute;
+		width: 77px;
+		height: 72px;
+		left: 49px;
+		top: 34px;
+		overflow: visible;
+	}
+	#Profile {
+		left: 489px;
+		top: 64px;
+		position: absolute;
+		overflow: visible;
+		width: 282px;
+		height: 21px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Profile.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(14,158,248,1);
+	}
+	#About_u {
+		left: 659px;
+		top: 66px;
+		position: absolute;
+		overflow: visible;
+		width: 282px;
+		height: 21px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(14,158,248,1);
+	}
+	#visAngel_v {
+		left: 621px;
+		top: 224px;
+		position: absolute;
+		overflow: visible;
+		width: 463px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 100px;
+		color: rgba(0,0,0,1);
+	}
+	#Screenshot_2020-10-14_at_55030_w {
+		position: absolute;
+		width: 445px;
+		height: 419px;
+		left: 152px;
+		top: 362px;
+		overflow: visible;
+	}
+	#Your_Digital_donation_Box_-_po {
+		left: 621px;
+		top: 362px;
+		position: absolute;
+		overflow: visible;
+		width: 1196px;
+		white-space: nowrap;
+		line-height: 41px;
+		margin-top: -5px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 31px;
+		color: rgba(0,0,0,1);
+	}
+	#Donate {
+		left: 829px;
+		top: 68px;
+		position: absolute;
+		overflow: visible;
+		width: 282px;
+		height: 21px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Donate.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(14,158,248,1);
+	}
+	#Group_18 {
+		position: absolute;
+		width: 393px;
+		height: 77px;
+		left: 618px;
+		top: 851px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Sign_up.html;
+		cursor: pointer;
+	}
+	#Rectangle_408 {
+		fill: rgba(58,139,83,1);
+	}
+	.Rectangle_408 {
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 77px;
+		left: 0px;
+		top: 0px;
+	}
+	#Add_visAngel_Extension {
+		left: 15px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 355px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+
+	#Link {
+		color: rgba(14,158,248,1);
+		text-decoration: none;
+	}
+
+	#Link:hover{
+		color: rgba(14,158,248,1);
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+<div id="About">
+	<div id="visAngel">
+		<span>visAngel</span>
+  </div>
+  <img id="Screenshot_2020-10-14_at_55030" src="pictures/logo.png">
+  <div id="Foundations">
+		<span><a id="Link" href="./foundation.html">Foundations</a></span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Profile">
+		<span>Profile</span>
+	</div>
+	<div id="About_u">
+		<span>About</span>
+	</div>
+	<div id="visAngel_v">
+		<span>visAngel</span>
+	</div>
+	<img id="Screenshot_2020-10-14_at_55030_w" src="pictures/logo.png">
+	<div id="Your_Digital_donation_Box_-_po">
+		<span>Your Digital donation Box - powered by VISA<br/><br/>> Small donation, Big impact</span><br><span style="font-style:normal;font-weight:normal;font-size:25px;">Donations should be made simple just by rounding up your online purchases.<br/>We truly believe that these small donations will make a great impact. </span><br><span><br/>> Donate smartly! </span><br><span style="font-style:normal;font-weight:normal;font-size:25px;">Ensure that your donations reach charities and foundations of your choice safely and efficiently.</span><br><span><br/>> Don’t let your good deeds go unheard! </span><br><span style="font-style:normal;font-weight:normal;font-size:25px;">visAngel generates donation tax receipts that you can use for tax rebates</span><br><span><br/><br/>  </span><br>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Donate">
+		<span><a id="Link" href="./donate.html">Donate</a></span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Group_18">
+		<svg class="Rectangle_408">
+			<rect id="Rectangle_408" rx="4" ry="4" x="0" y="0" width="393" height="77">
+			</rect>
+		</svg>
+		<div id="Add_visAngel_Extension">
+			<span>Add visAngel Extension</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
