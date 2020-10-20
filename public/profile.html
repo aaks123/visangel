@@ -23,10 +23,10 @@
 	}
 	#Profile {
 		position: absolute;
-		width: 100%;
-		height: 100%;
+		width: 1920px;
+		height: 1107px;
 		background-color: rgba(255,255,255,1);
-		overflow: auto;
+		overflow: hidden;
 		--web-view-name: Profile;
 		--web-view-id: Profile;
 		--web-scale-on-resize: true;
@@ -845,6 +845,17 @@
 		font-size: 15px;
 		color: rgba(14,158,248,1);
 	}
+
+	#Link {
+		color: rgba(14,158,248,1);
+		text-decoration: none;
+	}
+
+	#Link:hover{
+		color: rgba(14,158,248,1);
+		font-weight: bold;
+	}
+
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3698,7 +3709,7 @@ window.application = new Application();
 		<span>C</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="Foundations">
-		<span>Foundations</span>
+		<span><a id="Link" href="./foundation.html">Foundations</a></span>
 	</div>
 	<img id="Screenshot_2020-10-14_at_55030" src="pictures/logo.png">
 	<div id="Profile_u">
@@ -3746,14 +3757,12 @@ window.application = new Application();
 	<div id="Change">
 		<span>Change</span>
 	</div>
-	<!-- =====Hides Current Card - START
-	<div id="Current_Card__">
+	<!-- <div id="Current_Card__">
 		<span>Current Card: </span><br>
 	</div>
 	<div id="Change_ba">
 		<span>Change</span>
-	</div>
-	Hides Current Card - END===== -->
+	</div> -->
 	<svg class="Rectangle_409">
 		<rect id="Rectangle_409" rx="19" ry="19" x="0" y="0" width="409" height="38">
 		</rect>
@@ -3853,13 +3862,13 @@ window.application = new Application();
 	<img id="Screenshot_2020-10-15_at_43425" src="pictures/heart.png">
 	<img id="Screenshot_2020-10-15_at_43017" src="pictures/earth.png">
 	<div onclick="application.goToTargetView(event)" id="About">
-		<span>About</span>
+		<span><a id="Link" href="./index.html">About</a></span>
 	</div>
 	<div id="Change_cb">
 		<span>Change</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="Donate">
-		<span>Donate</span>
+		<span><a id="Link" href="./donate.html">Donate</a></span>
 	</div>
 </div>
 </body>
