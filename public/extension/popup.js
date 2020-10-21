@@ -40,9 +40,28 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         var body = document.getElementsByTagName('body')[0];
         var iframeElement = document.createElement('iframe');
         iframeElement.setAttribute('src', "https://testing-visangel-deployment.herokuapp.com/popupCheckout.html?subtotal="+change.toString());
-        iframeElement.setAttribute('width', '500px');
+        iframeElement.setAttribute('width', '300px');
         iframeElement.setAttribute('height', '500px');
         iframeElement.setAttribute('frameborder', '0');
         body.appendChild(iframeElement);
+        h2 = document.getElementsByTagName("h2")[0];
+        donate = document.getElementById("donate");
+        f =0;
+
+        var monitor = setInterval(function(){
+            var elem = document.activeElement;
+            if(elem && elem.tagName == 'IFRAME'){
+                clearInterval(monitor);
+                donate.style.display = "none";
+    }
+}, 100);
+        iframeElement.onload = function() {
+            f+=1;
+            if(f==2)
+            {
+                h2.style.display = "none";
+                donate.style.display = "none";
+            }
+        };
     });
 });
