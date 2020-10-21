@@ -16,7 +16,7 @@
         });
         V.on("payment.success", function(payment) {
           document.write("payment.success: \n" + JSON.stringify(payment));
-          window.location.href = "https://testing-visangel-deployment.herokuapp.com/pictures/heart.png"
+          window.location.href = "https://testing-visangel-deployment.herokuapp.com/processingPayment.html"
           document.body.style.display = "none";
         });
         V.on("payment.cancel", function(payment) {
