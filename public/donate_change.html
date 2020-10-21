@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>VisAngel</title>
+    <!-- <script src="./visaCheckoutScript.js" type="module"></script> -->
+    <script type="text/javascript">
+    function onVisaCheckoutReady() {
+        V.init( {
+        apikey: "BI4LGN8G4Z8VB2IFG2Z021m1Lyg1ROGb-421912OMY0EbPZXY",
+        encryptionKey: "1QGJTPY55V3B2F277MCJ13rl07_0jX6agSmRn3ershVRukVSg",
+        paymentRequest: {
+            currencyCode: "USD",
+            subtotal: "10.00"
+        }
+        });
+        V.on("payment.success", function(payment) {
+        document.write("payment.success: \n"); 
+        //JSON.stringify(payment,null,2);
+        //pretty_payment = JSON.stringify(payment,null,2);
+        document.write("\ncallid : "+payment.callid);
+        //document.write("\nencKey : "+payment.encKey);
+        //document.write("\nencryptionKey : "+payment.encryptionKey);
+        //document.write("\nencPaymentData : "+payment.encPaymentData);
+        //document.write("\n"+JSON.stringify(payment,null,2));
+        window.location.href = "file:///Users/aaks/Documents/visangel/public/processing_payment.html";
+        });
+        V.on("payment.cancel", function(payment) {
+        document.write("payment.cancel: \n" + JSON.stringify(payment));
+        });
+        V.on("payment.error", function(payment, error) {
+        document.write("payment.error: \n" +
+        JSON.stringify(payment) + "\n" +
+        JSON.stringify(error));
+        });
+        }
+    </script>
+  </head>
+  <body>
+    <center><img src="./pictures/donnate.png"/></center>
+    <br>
+    <center><img alt="Visa Checkout" class="v-button" role="button"
+    src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/></center>
+    <script type="text/javascript"
+    src="https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js">
+    </script>
+  </body>
+</html>
