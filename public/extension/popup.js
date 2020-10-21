@@ -34,5 +34,11 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         var name = document.getElementById("name");
         donation.textContent = change;
         name.textContent = response.name;
+        var body = document.getElementsByTagName('body')[0];
+        var iframeElement = document.createElement('iframe');
+        iframeElement.setAttribute('src', "http://vis-angel.herokuapp.com/popupCheckout.html?subtotal="+change.toString());
+        iframeElement.setAttribute('width', '500px');
+        iframeElement.setAttribute('height', '500px');
+        body.appendChild(iframeElement);
     });
 });
