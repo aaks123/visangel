@@ -40,7 +40,7 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         var body = document.getElementsByTagName('body')[0];
         var iframeElement = document.createElement('iframe');
         iframeElement.setAttribute('src', "https://testing-visangel-deployment.herokuapp.com/popupCheckout.html?subtotal="+change.toString());
-        iframeElement.setAttribute('width', '300px');
+        iframeElement.setAttribute('width', '400px');
         iframeElement.setAttribute('height', '500px');
         iframeElement.setAttribute('frameborder', '0');
         body.appendChild(iframeElement);
