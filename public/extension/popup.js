@@ -47,14 +47,32 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         h2 = document.getElementsByTagName("h2")[0];
         donate = document.getElementById("donate");
         f =0;
-
+        var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
         var monitor = setInterval(function(){
             var elem = document.activeElement;
             if(elem && elem.tagName == 'IFRAME'){
                 clearInterval(monitor);
                 donate.style.display = "none";
-    }
-}, 100);
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "https://testing-visangel-deployment.herokuapp.com/addDonation", true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                if((name.textContent.trim()!="") && (donation.textContent.trim()!=""))
+                {
+                    xhr.send(JSON.stringify({
+                    name: name.textContent.slice(7),
+                    org: "Make a Wish foundation",
+                    date:utc,
+                    amount:donation.textContent
+                }));
+                }
+
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState == 4 && xhr.status == 200) {
+                        console.log(xhr.responseText);
+                    }
+                }
+            }
+        }, 100);
         iframeElement.onload = function() {
             f+=1;
             if(f==2)
